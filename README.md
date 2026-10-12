@@ -169,6 +169,26 @@ O projeto foi executado e testado com sucesso de ponta a ponta:
 <img width="48%" alt="Mensagens geradas 1" src="https://github.com/user-attachments/assets/60887869-ecc6-4deb-8330-288fcf8fe8b2" />
 <img width="48%" alt="Mensagens geradas 2" src="https://github.com/user-attachments/assets/e087d599-9609-4abe-8fbe-90fbe34aa380" />
 
+---
+
+## 🛠️ Decisões Técnicas do Projeto
+
+Esta seção documenta a arquitetura e as escolhas técnicas realizadas durante o desenvolvimento da automação:
+
+### 1. Extração de Dados com RPA (Python + BeautifulSoup)
+* **Objetivo:** Coleta automatizada da lista de clientes na página web.
+* **Decisão:** Optou-se pelo uso de Python com a biblioteca `BeautifulSoup` para simular uma extração via RPA, simulando a leitura humana da tabela HTML e estruturando os dados em JSON.
+* **Integração:** Os dados extraídos foram enviados via requisição HTTP POST para o endpoint do Webhook configurado no n8n.
+
+### 2. Orquestração e Cruzamento com n8n
+* **Objetivo:** Centralizar a lógica de negócios e o fluxo de dados em uma plataforma visual.
+* **Decisão:** O n8n foi escolhido por permitir conectar o recebimento via Webhook à leitura do arquivo de investimentos (`docs/data.csv`) de forma rápida, sem a necessidade de criar um servidor web complexo do zero.
+* **Processamento:** O fluxo filtra e cruza o perfil de investidor de cada cliente com os produtos financeiros adequados.
+
+### 3. Geração das Mensagens Personalizadas
+* **Objetivo:** Comunicar ao cliente a recomendação de investimento ideal de forma personalizada.
+* **Decisão:** As mensagens foram estruturadas levando em consideração o saldo e a tolerância a risco (Conservador, Moderado ou Arrojado), garantindo uma recomendação coerente com as boas práticas do mercado financeiro.
+
 ## Prompts Úteis para Copilotos de IA
 
 | Tarefa | Sugestão de Prompt |
