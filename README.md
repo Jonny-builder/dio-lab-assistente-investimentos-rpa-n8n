@@ -155,14 +155,15 @@ Conecte o Agente de IA do N8N a um modelo como Gemini ou GPT para:
 O projeto foi executado e testado com sucesso de ponta a ponta:
 
 1. **Execução do RPA em Python:**
-   ![Script Python](<img width="1321" height="979" alt="Script rodando" src="https://github.com/user-attachments/assets/d4ad61ea-68c5-462b-9fc4-6b1bb56682f4" />)
+   <img width="1321" alt="Script rodando" src="https://github.com/user-attachments/assets/d4ad61ea-68c5-462b-9fc4-6b1bb56682f4" />
 
 2. **Fluxo Executado no n8n:**
-   ![Workflow n8n](<img width="1164" height="559" alt="Fluxo no n8n" src="https://github.com/user-attachments/assets/69e31391-63d0-407e-aac7-a261ab0c16f7" />)
+   <img width="1164" alt="Fluxo no n8n" src="https://github.com/user-attachments/assets/69e31391-63d0-407e-aac7-a261ab0c16f7" />
 
 3. **Mensagens Personalizadas Geradas:**
-   ![Resultado Final](<img width="499" height="491" alt="Mensagens geradas_1" src="https://github.com/user-attachments/assets/60887869-ecc6-4deb-8330-288fcf8fe8b2" />)
-   ![Resultado Final](<img width="501" height="495" alt="Mensagens geradas_2" src="https://github.com/user-attachments/assets/e087d599-9609-4abe-8fbe-90fbe34aa380" />)
+   <img width="499" alt="Mensagens geradas 1" src="https://github.com/user-attachments/assets/60887869-ecc6-4deb-8330-288fcf8fe8b2" />
+   <br>
+   <img width="501" alt="Mensagens geradas 2" src="https://github.com/user-attachments/assets/e087d599-9609-4abe-8fbe-90fbe34aa380" />
 
 ## Prompts Úteis para Copilotos de IA
 
